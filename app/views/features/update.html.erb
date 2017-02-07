@@ -1,0 +1,11 @@
+<h1>Edit Article</h1>
+
+<form action="create/add_article" method="get">
+
+	<label>Author:	</label> 	<input type="text" name="author" value="<%= @article.author %>"></br>
+	<label>Title: 	</label>	<input type="text" name="title" value="<%= @article.title %>"></br>
+	<label>Content:	</label>	<input type="text" name="content" value="<% @article.content %>"></br>
+								<input type="submit" value="Add">
+
+</form>
+
