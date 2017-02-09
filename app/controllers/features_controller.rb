@@ -16,6 +16,7 @@ class FeaturesController < ApplicationController
     redirect_to '/'
   end
 
+
   def edit 
     @article=Article.find(params[:id])
     
@@ -23,12 +24,12 @@ class FeaturesController < ApplicationController
 
 
   def update
-
+    puts "sdfsd"
     @article=Article.find(params[:id])
-    @article.title=params[:title]
-    @artitle.content=params[:content]
-    @artitle.author=params[:author]
-
+    @article.author = params[:author]
+    @article.title = params[:title]
+    @article.content = params[:content]
+    @article.save
     redirect_to '/'
     
   end

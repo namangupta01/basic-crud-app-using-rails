@@ -1,5 +1,7 @@
 <h1><% @article.title %></h1>
+Title: <%= @article.title %></br>
 Author: <%= @article.author %></br>
-Content: <%= @article.content %></br>
+Content: <%= @article.content %></br></br>
+
 <a href="/show/<%= @article.id %>/edit">Edit</a>
 <a href="/show/<%= @article.id %>/delete">Delete</a>
