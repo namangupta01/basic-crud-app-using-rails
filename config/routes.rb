@@ -9,7 +9,7 @@ Rails.application.routes.draw do
 
   get 'create'=> 'features#create'
 
-  get 'create/add_article'=>'features#add_article'
+ post 'create/add_article'=>'features#add_article'
 
   get 'show/:id/update'=>'features#update'
 

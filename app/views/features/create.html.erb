@@ -1,9 +1,18 @@
 <h1>Add Your Article Here</h1>
-<form action="create/add_article" method="get">
+
+<%= form_tag url_for(controller: 'features',action: 'add_article') do %>
+Title: <%= text_field_tag :title %></br>
+Author: <%= text_field_tag :author %></br>
+Content: <%= text_field_tag :content %></br>
+<%= submit_tag "Create Article" %>
+<% end %>
+
+
+<!-- <form action="create/add_article" method="get">
 
 	<label>Author:	</label> 	<input type="text" name="author"></br>
 	<label>Title: 	</label>	<input type="text" name="title"></br>
 	<label>Content:	</label>	<input type="text" name="content"></br>
 								<input type="submit" value="Add">
 
-</form>
+</form> -->
